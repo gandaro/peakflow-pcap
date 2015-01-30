@@ -139,6 +139,7 @@ class PeakflowBrowser:
         data = urllib.urlencode(parameters)
         resp = self.br.retrieve(self.base_url + '/wizards/flowtap?id=flowtap',
                 filename=filename, data=data)
+        return resp
 
 
 
